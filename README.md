@@ -6,7 +6,7 @@
 
 ### 🎯 Core Capabilities
 - **Multiple TTS Engines**:
-  - 🏆 **Coqui XTTS-v2**: 90-95% humanoid quality (BEST)
+  - 🏆 **Tacotron2 + HiFiGAN**: 90-95% humanoid quality (BEST)
   - 🌐 **Google TTS**: Fast, reliable, online
   - 💻 **pyttsx3**: Offline support, basic quality
 
@@ -22,7 +22,7 @@
 - And more...
 
 ### 🔥 Key Features
-- ✅ **90-95% humanoid voice** with Coqui XTTS-v2
+- ✅ **90-95% humanoid voice** with Tacotron2 + HiFiGAN
 - ✅ **Speaker reference audio** for consistent quality
 - ✅ **Automatic language detection**
 - ✅ **Text preprocessing** for optimal TTS
@@ -114,7 +114,7 @@ Access at: **http://localhost:5000**
 1. **Enter Text** or **Upload File** (PDF, DOCX, TXT, Image)
 2. **Select Language** (or use auto-detection)
 3. **Choose TTS Engine**:
-   - Coqui (best quality, slower)
+   - Tacotron2 + HiFiGAN (best quality, slower)
    - Google TTS (fast, requires internet)
    - pyttsx3 (offline, basic)
 4. **Select Voice Quality** (high/standard/natural)
@@ -170,7 +170,7 @@ curl http://localhost:5000/health
 
 | Engine | Quality | Speed | Internet | Languages | Notes |
 |--------|---------|-------|----------|-----------|-------|
-| **Coqui XTTS-v2** | ⭐⭐⭐⭐⭐ | 🐢 Slow | First use only | 15+ | Best quality, requires GPU for speed |
+| **Tacotron2 + HiFiGAN** | ⭐⭐⭐⭐⭐ | 🐢 Slow | First use only | 15+ | Best quality, requires GPU for speed |
 | **Google TTS** | ⭐⭐⭐⭐ | ⚡ Fast | Required | 100+ | Reliable, cloud-based |
 | **pyttsx3** | ⭐⭐ | ⚡ Fast | No | Limited | Offline, robotic voice |
 
@@ -187,10 +187,10 @@ SECRET_KEY=your-secret-key-here
 ELEVENLABS_API_KEY=your-api-key  # Optional
 ```
 
-### Coqui XTTS-v2 Settings
+### Tacotron2 + HiFiGAN Settings
 
 The system automatically:
-1. Downloads the XTTS-v2 model (first use)
+1. Downloads the Tacotron2 + HiFiGAN model (first use)
 2. Downloads speaker reference audio
 3. Caches the model for faster subsequent use
 4. Uses GPU if available
@@ -277,7 +277,7 @@ pip install pydub
 ## 📝 License
 
 This project uses multiple open-source libraries:
-- Coqui TTS (Mozilla Public License 2.0)
+- Tacotron2 + HiFiGAN TTS (Mozilla Public License 2.0)
 - Google TTS (MIT License)
 - pyttsx3 (Mozilla Public License 2.0)
 
@@ -315,4 +315,4 @@ For issues or questions:
 
 ---
 
-**Made with ❤️ using Coqui XTTS-v2**
+**Made with ❤️ using Tacotron2 + HiFiGAN**
