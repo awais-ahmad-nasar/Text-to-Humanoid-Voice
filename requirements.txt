@@ -1,0 +1,28 @@
+# Flask Web Framework
+Flask==3.0.0
+Werkzeug==3.0.1
+
+# Text Extraction (Module 2)
+pdfplumber==0.10.3
+python-docx==1.1.0
+pytesseract==0.3.10
+Pillow==10.1.0
+
+# Language Detection (Module 3)
+langdetect==1.0.9
+
+# Text-to-Speech Engines (Module 4)
+pyttsx3==2.90
+gTTS==2.4.0
+
+# Premium TTS (Optional - for best quality)
+elevenlabs==0.2.27
+
+# Audio Processing
+pydub==0.25.1
+
+# Utilities
+regex==2023.10.3
+
+# Optional: For Windows TTS support
+pywin32==306; sys_platform == 'win32'
